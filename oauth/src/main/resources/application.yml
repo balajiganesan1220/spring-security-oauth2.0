@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: oauth
+
+  security:
+    user:
+      name: user
+      password: password
+
+#GitHub OAuth2 Configuration
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: Ov23liPg44c0iaPGuAKB
+            client-secret: f35c56dcb6456e98d45a13eb5bafb0f6b548094d
+            scope: read:user, user:email
+
+    #Google OAuth2 Configuration
+          google:
+            client-id: 516207163079-7l6vkhhd3buba6r7r9ek7mhk0ecbc6jq.apps.googleusercontent.com
+            client-secret: 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
+
